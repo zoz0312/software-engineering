@@ -1,3 +1,5 @@
+package src.example2;
+
 public class Computer {
     private String owner;
 
@@ -14,3 +16,4 @@ public class Computer {
         myComputer.calculate();
     }
 }
+
