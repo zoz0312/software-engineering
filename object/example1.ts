@@ -123,12 +123,12 @@ class Police1 {
         this.handcuffs--;
     }
 
-    public shoot(pistol: Gun1) {
+    public shoot(pistol: Gun1 | null) {
         if (!pistol) {
             console.log('HUT BANG');
             return;
         }
-        this.putHandcuff();
+        pistol.shoot();
     }
 
     public static main(): void {
@@ -138,7 +138,7 @@ class Police1 {
         p1.putHandcuff();
 
         const p2: Police1 = new Police1(3);
-        const pistol1: null = null;
+        const pistol1: Gun1 | null = null;
         p2.shoot(pistol1);
         p2.putHandcuff();
     }
