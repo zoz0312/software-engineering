@@ -25,5 +25,10 @@ bin/
 ### VS Code ###
 .vscode/
 
+/node_modules
+/java-dist
+.idea
+
+
 ### Mac OS ###
 .DS_Store
