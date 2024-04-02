@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Director {
     private int actorNum;
-    private ArrayList<Actor> actors;
+    private final ArrayList<Actor> actors;
 
     public Director() {
         this.actors = new ArrayList<>();
@@ -24,7 +24,6 @@ public class Director {
 
     public void direct() {
         for (Actor actor : actors) {
-//            actor.play();
             if (actor instanceof ActionActor) {
                 ((ActionActor) actor).exercise();
             }
