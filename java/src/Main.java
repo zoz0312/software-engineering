@@ -1,6 +1,8 @@
 package src;
 
-import src.exampleRobot.Client;
+//import src.exampleRobot.Client;
+
+import src.exampleCommand.Client;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,6 +16,7 @@ public class Main {
 
         String[] testArgs = {}; // CookTest의 main 메서드에 전달될 인자 배열
 //        new CookTest().main(testArgs);
+//        new Client().main(testArgs);
         new Client().main(testArgs);
     }
 }
