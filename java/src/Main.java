@@ -3,7 +3,8 @@ package src;
 //import src.exampleRobot.Client;
 
 //import src.exampleCommand.Client;
-import src.exampleSingleton.singleton3.SingletonMain;
+//import src.exampleSingleton.singleton3.SingletonMain;
+import src.exampleTemplate.Client;
 
 
 public class Main {
@@ -19,7 +20,7 @@ public class Main {
         String[] testArgs = {}; // CookTest의 main 메서드에 전달될 인자 배열
 //        new CookTest().main(testArgs);
 //        new Client().main(testArgs);
-//        new Client().main(testArgs);
-        new SingletonMain().main(testArgs);
+        new Client().main(testArgs);
+//        new SingletonMain().main(testArgs);
     }
 }
